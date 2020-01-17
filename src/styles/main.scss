@@ -1,0 +1,32 @@
+// Variables
+@import "Styles/variables/_colors.scss";
+@import "Styles/variables/_typography.scss";
+@import "Styles/variables/_spacing.scss";
+
+// Mixins
+// @import "Styles/tools/_mixins.scss";
+
+// A CSS reset for the base
+@import "Styles/tools/_reset.scss";
+
+// A grid system
+// https://github.com/sealninja/react-grid-system
+
+// Elements
+// Place basic styling for HTML elements here.
+@import "Styles/elements/_form.scss";
+
+// Blocks
+// Place styling for commonly grouped components here.
+
+// Components
+// Place styling for individual components here.
+
+// Utility Classes
+// These are common short classes which can override all other classes.
+@import "Styles/tools/_utility.scss";
+
+body {
+	color: $color-primary;
+	font-size: $fz-lg;
+}

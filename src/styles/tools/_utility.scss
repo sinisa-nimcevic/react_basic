@@ -1,0 +1,20 @@
+$sizes: "single", "double", "triple";
+$positions: "t", "r", "b", "l";
+$position-names: "top", "right", "bottom", "left";
+
+
+// Create mt-single type classes for margins and paddings, at all 4 positions with all of the sizes (single, double and triple).
+@each $size in $sizes {
+	@each $pos in $positions {
+        $index: index($positions, $pos);
+
+		.m#{$pos}-#{$size} {
+			margin-#{nth($position-names, $index)}: index($sizes, $size) * $unit;
+        }
+        
+        .p#{$pos}-#{$size} {
+			padding-#{nth($position-names, $index)}: index($sizes, $size) * $unit;
+        }
+	}
+}
+
